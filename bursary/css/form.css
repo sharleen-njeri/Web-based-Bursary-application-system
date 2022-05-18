@@ -1,0 +1,59 @@
+
+form {
+    border: 1px solid black;
+    border-radius: 0px;
+    padding: 15px 20px;
+    margin: 30px;
+    color: white;
+    cursor: pointer;
+    /* background-image:linear-gradient(145deg,rgb(2, 2, 29), rgb(4, 53, 59)); */
+    font-size: 18px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+form input {
+    font-size: 18px;
+    border: transparent;
+}
+
+#signupform {
+    width: 40%;
+    margin: 30px 80px;
+}
+
+form input, form select {
+    border-color: rgb(69, 77, 77);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+form input:focus {
+    filter: drop-shadow(2px 2px 7px rgb(8, 6, 44));  
+    outline: none;
+    /*Drops a shadow when the input field is focused on by the cursor*/
+}
+
+form #login, form #signup, form #burssignup {
+    border-color: black;
+    background: white;
+    color: black;
+    width: 200px;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+
+form #login:hover, form #signup:hover, form #burssignup:hover {
+    color: white;
+    background-color: rgb(8, 6, 44);
+    transition: .7s;
+}
+
+fieldset {
+    padding: 20px;
+    border-color: rgba(4, 183, 214, 0.815);
+}
+
+.two-forms {
+    display: flex;
+    flex-direction: row;
+}

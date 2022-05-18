@@ -1,0 +1,3 @@
+The includes folder has script that are used to implement functionality. 
+They don't display pages. 
+The data received from the pages is handed over to the _inc.php files to handle the underlying logic.

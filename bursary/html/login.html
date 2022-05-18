@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bursary application</title>
+    <meta charset="utf=8" />
+    <meta name="keywords" content="Bursary,application," />
+    <meta name="description" content="Allowing online bursary application." />
+    <meta name="author" content="Sharleen Njeri" />
+
+    <link rel="stylesheet" type="text/css" href="../css/new.css" />
+    <link rel="stylesheet" type="text/css" href="../css/form.css" />
+  </head>
+  <body>
+    <nav class="nav">
+      <ul class="ul-nav">
+        <li><a href="index.php">HOME</a></li>
+        <li><a href="signup.php">SIGN UP</a></li>
+        <li><a href="login.php">LOG IN</a></li>
+      </ul>
+    </nav>
+
+    <div class="mid-section">
+      <div class="hero-text">
+        <h1 class="hero-text">LOG IN</h1>
+      </div>
+
+      <form action="../includes/login_inc.php" method="POST">
+        <p>Username or Email</p>
+        <input
+          type="text"
+          id="emailOrUsername"
+          name="emailOrUsername"
+          required
+        />
+        <br />
+        <p>Password</p>
+        <input type="password" id="password" name="password" required />
+        <br />
+        <label for="role">Select Role</label> 
+        <br />
+        <select name="role" id="role">
+          <option value="applicant">Applicant</option>
+          <option value="bursadmin">Bursary Admin</option>
+          
+        </select>
+        <br /><br />
+        <input type="submit" id="login" name="login" value="Log In" />
+      </form>
+    </div>
+
+    <div class="footer">Copyright &copy;Sharleen Njeri</div>
+  </body>
+</html>

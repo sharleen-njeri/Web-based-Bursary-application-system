@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*First top three override the default settings that might be in some browsers*/
+    font-family: 'Gill Sans', 'Gill Sans MT';
+}
+
+body {
+    padding: 40px;
+}
+
+.header {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10%;
+    background-image:linear-gradient(145deg,rgb(2, 2, 29), rgb(4, 53, 59));
+    color: white;
+    border-radius: 40px;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+}
+
+.header li {
+    margin-left: 3rem;
+}
+
+.header a {
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+.header a:hover {
+    color: rgba(4, 183, 214, 0.815);
+}
+
+form #apply {
+    border-color: black;
+    background: white;
+    color: black;
+    width: 200px;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 18px;
+}
+
+form select , form select option {
+    font-size: 18px;
+}
+
+form #apply:hover {
+    color: white;
+    background-color: rgb(8, 6, 44);
+    transition: .7s;
+}

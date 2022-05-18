@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Bursary application</title>
+    <meta charset="utf=8" />
+    <meta name="keywords" content="Bursary,application," />
+    <meta name="description" content="Allowing online bursary application." />
+    <meta name="author" content="Sharleen Njeri" />
+    <link rel="stylesheet" type="text/css" href="../css/form.css" />
+    <link rel="stylesheet" type="text/css" href="../css/new.css" />
+  </head>
+
+  <body>
+    <nav class="nav">
+      <ul class="ul-nav">
+        <li><a href="index.php">HOME</a></li>
+        <li><a href="application.php">APPLICATIONS</a></li>
+        <li><a href="schools.php">SCHOOLS</a></li>
+        <li><a href="../includes/logout_inc.php">LOG OUT</a></li>
+      </ul>
+    </nav>
+
+    <div class="mid-section">
+      <div class="hero-text">
+        <h1 class="hero-text">WEB BASED BURSARY APPLICATION SYSTEM</h1>
+      </div>
+
+      <!--*Add a School Form-->
+      <!--TODO: Limit the application only to one, but still display the form-->
+      <form
+        action="../includes/school_inc.php"
+        method="POST"
+        enctype="multipart/form-data"
+      >
+        <label for="uniID">University ID (Code)</label>
+        <input type="text" name="uniID" id="uniID" />
+        <label for="unName">University Name</label>
+        <input type="text" name="uniName" id="uniName" />
+        <label for="uniEmail">University Email</label>
+        <input type="text" name="uniEmail" id="uniEmail" />
+        <label for="uniLocation">University Location</label>
+        <input type="text" name="uniLocation" id="uniLocation" />
+        <input
+          type="submit"
+          id="addschool"
+          name="addschool"
+          value="Add School"
+        />
+      </form>
+    </div>
+
+    <div class="footer">Copyright &copy;Sharleen Njeri</div>
+  </body>
+</html>

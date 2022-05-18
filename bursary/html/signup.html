@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> Bursary application</title>
+    <meta charset="utf=8">
+    <meta name="keywords" content="Bursary,application," />
+    <meta name="description" content="Allowing online bursary application." />
+    <meta name="author" content="Sharleen Njeri" />
+
+    
+    <link rel="stylesheet" type="text/css" href="../css/main.css">
+    <link rel="stylesheet" type="text/css" href="../css/form.css">
+    <link rel="stylesheet" type="text/css" href="../css/new.css">
+
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="logo">
+            The Logo
+        </div>
+        <ul class="ul-nav">
+            <li><u><a href="index.php">HOME</a></u></li>
+            <li><a href="signup.php"">SIGN UP</a></li>
+            <li><a href="login.php">LOG IN</a></li>
+        </ul>
+    </nav>
+
+    <br>
+    <center><h2><u>WEB BURSARY APPLICATION SYSTEM</u></h2></center>
+
+    <div class="two-forms">
+        <div id="signupform">
+        <form action="../includes/signup_inc.php" method="POST" autocomplete="off">
+            <fieldset>
+            <legend>Client Sign Up Form</legend>
+            <h3>Enter the following personal details</h3>
+            <div>
+                <p>National Identification number</p>
+                <input type="text" name="applicantID" maxlength="8" required autofocus />
+            </div>
+            <div>
+                <p>First Name</p>
+                <input type="text" name="firstName" maxlength="50" required autofocus />
+            </div>
+            <div>
+                <p>Surname</p>
+                <input type="text" name="surName" maxlength="50" required autofocus />
+            </div>
+            <div>
+                <p>Email</p>
+                <input type="email" name="email" maxlength="50" required />
+            </div>
+            <div>
+                <p>Username</p>
+                <input type="text" name="userName" maxlength="50" required />
+            </div>
+            <div>
+                <p>Password</p>
+                <input type="password" name="password1" maxlength="100" required />
+            </div>
+            <div>
+                <p>Confirm Password</p>
+                <input type="password" name="password2" maxlength="100" required />
+            </div>
+            <br>
+            <div>
+                <input type="submit" id="signup" name="signup" value="Sign Up" />
+            </div>
+        </fieldset>
+        </form>
+    </div>
+
+    <!--*The Bursary Admin's sign up form-->
+    <div id="signupform">
+        <form action="../includes/signup_inc.php" method="POST" autocomplete="off">
+            <fieldset>
+            <legend>Bursary Admin Sign Up Form</legend>
+            <h3>Enter the following personal details</h3>
+            <div>
+                <br>
+                <p>Bursary Admin ID</p>
+                <input type="text" name="bursAdminID" maxlength="8" required autofocus />
+            </div>
+            <div>
+                <p>First Name</p>
+                <input type="text" name="bursFirstName" maxlength="50" required autofocus />
+            </div>
+            <div>
+                <p>Surname</p>
+                <input type="text" name="bursSurName" maxlength="50" required autofocus />
+            </div>
+            <div>
+                <p>Email</p>
+                <input type="email" name="bursEmail" maxlength="50" required />
+            </div>
+            <div>
+                <p>Username</p>
+                <input type="text" name="bursUserName" maxlength="50" required />
+            </div>
+            <div>
+                <p>Password</p>
+                <input type="password" name="bursPassword1" maxlength="100" required />
+            </div>
+            <div>
+                <p>Confirm Password</p>
+                <input type="password" name="bursPassword2" maxlength="100" required />
+            </div>
+            <br>
+            <div>
+                <input type="submit" id="burssignup" name="burssignup" value="Sign Up" />
+            </div>
+            </fieldset>
+        </form>
+    </div>
+    </div>
+
+    <div class="footer">
+        Copyright &copy;Sharleen Njeri
+
+    </div>
+
+</body>
+
+</html>
