@@ -60,7 +60,7 @@
 
         <label for="familyStatus">Family Status</label>
         <select id="familyStatus" name="familyStatus">
-            <option value="Both Parents">Both Parents</option>
+            <option value="Both Parents">Both Parents Present</option>
             <option value="Single Parent">Single Parent</option>
             <option value="guardian">Guardian</option>
         </select> 
